@@ -77,6 +77,16 @@ def test_elemente_palindrom():
     assert elemente_palindrom(['abc', 'def', 'mmm', 'ghi', 'jkl']) == ['mmm']
 
 
+def inlocuire_elemente(lista):
+    copie = lista[:]
+    concatenare = ''
+    for x in copie:
+        concatenare = concatenare + x
+    n = len(concatenare)
+    for i in range(0, n):
+        pass
+
+
 def main():
     test_apare_in_lista()
     test_elemente_care_se_repeta()
@@ -100,7 +110,7 @@ def main():
         elif optiune == "4":
             print(elemente_palindrom(lista))
         elif optiune == "5":
-            pass
+            inlocuire_elemente(lista)
         elif optiune == "x":
             print("Ati iesit din program!")
             break
